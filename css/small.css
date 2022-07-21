@@ -1,0 +1,573 @@
+:root {
+  --border-color: #bbb;
+  --primary-color: #002042;
+  --secondary-color: #d3af4c;
+  --accent1-color: #2ac28a;
+  --accent2-color: #6a041d;
+  --heading-font: "Roboto Slab", serif;
+  --paragraph-font: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+.card {
+  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 20px 10px #bbb;
+}
+
+header {
+  padding: 1rem 0 0;
+  color: white;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+}
+
+.header-grid figure {
+  margin: 0.5rem auto;
+  padding: 0;
+}
+
+header h1,
+header h2 {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#header-date {
+  text-align: left;
+  padding: 1rem;
+  grid-column: 2 / -1;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 8px;
+}
+
+#header-alert{
+  grid-column: 1 / -1;
+  padding: 1rem;
+  color: red
+}
+
+.showme {
+  display: block;
+}
+
+.hideme {
+  display: none;
+}
+
+.header-title {
+  align-self: center;
+  margin: 1rem;
+}
+
+main {
+  margin: 1rem 0.5rem;
+  padding: 0 10px 5px;
+}
+
+main section {
+  padding: 0;
+  padding-bottom: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+main p {
+  padding: 0 1rem;
+}
+
+main h1 {
+  padding: 0 1rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+main h3 {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.main-hero img {
+  width: 100%;
+  height: auto;
+}
+
+.main-contact p,
+.main-temple p,
+.main-weather p {
+  text-align: center;
+}
+
+.main-temple figure img {
+  display: block;
+  max-width: 350px;
+  width: 100%;
+}
+
+.main-contact figure img {
+  display: block;
+  max-width: 350px;
+  width: 100%;
+}
+
+main h2 {
+  text-align: center;
+}
+
+.main-hero {
+  position: relative;
+}
+
+#hero-overlay {
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(3px);
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.9;
+}
+
+#hero-overlay h2 {
+  font-size: 20px;
+  padding: 0 1rem;
+}
+
+#hero-overlay-btn {
+  display: block;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  color: black;
+  text-decoration: none;
+  width: max-content;
+  margin: 0 auto 1rem;
+}
+
+#hero-overlay-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  text-shadow: none;
+}
+
+footer {
+  color: black;
+  padding: 1rem 0;
+}
+
+footer p {
+  padding: 0.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-links {
+  margin: 0.2rem auto 0.5rem;
+  width: 120px;
+}
+
+.social-links a {
+  margin: 0.3rem;
+}
+
+.social-links img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 47px;
+  height: auto;
+}
+
+figure {
+  padding: 0 1rem;
+  margin: 1.5rem 0 1rem;
+}
+
+figure img {
+  border: 1px solid var(--border-color);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/*----------- NAVIGATION --------------*/
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+nav button {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+  color: white;
+}
+
+nav {
+  background-color: #eee;
+  background-color: var(--primary-color);
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2vw;
+  text-decoration: none;
+  color: #333;
+  color: var(--accent1-color);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  color: var(--accent1-color);
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: inherit;
+}
+
+nav ul {
+  display: none;
+}
+nav ul.open {
+  display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {
+  display: block;
+}
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none;
+}
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+.main-spotlight1 div,
+.main-spotlight2 div {
+  margin: 0.5rem 1rem;
+  margin: 0 auto;
+  background-color: gray;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  max-width: 100px;
+}
+
+.main-spotlight1 div img,
+.main-spotlight2 div img {
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+#responsive-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+#responsive-image-example {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.responsive-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.main-discover-images img {
+  max-width: 300px;
+}
+
+.main-discover-images figcaption {
+  text-align: center;
+  padding-top: 5px;
+}
+
+/*----------- FORM --------------*/
+
+form fieldset {
+  margin: 2rem 2rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 0.5rem 2% 1.5rem;
+  background-color: #ddd;
+}
+
+form legend {
+  color: var(--secondary-color);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: black;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 75%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem 0;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  margin-left: calc(2% + 2rem);
+  width: 75%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border: lightcoral solid 2px;
+}
+
+form label.top input:required:valid {
+  border: lightgreen solid 2px;
+}
+
+.benefits {
+  display: none;
+}
+
+/* Form / Grid toggle */
+
+.main-directory {
+  padding: 1rem;
+  min-width: 250px;
+}
+
+.directory-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-directory button {
+  padding: 1rem;
+  margin: 0 0.2rem 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  display: flex;
+  align-items: center;
+}
+
+.grid section {
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.grid section > * {
+  margin: 0.3rem;
+}
+
+.list section {
+  flex-direction: row;
+  justify-content: left;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.list section > * {
+  margin: 0 1rem;
+  text-align: left;
+}
+
+.list section p {
+  display: none; /* smaller viewports only */
+}
+
+.directory section h3 {
+  font-size: 1.5rem;
+}
+
+.directory section a {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.directory img {
+  height: 75px;
+  max-width: 100%;
+}
+
+@media (min-width: 700px) {
+  .list section img {
+    display: block;
+  }
+}
+
+#temperature {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+#weather-icon {
+  margin: 0 auto;
+  width: 75px;
+  height: 100%;
+  display: block;
+}
+
+#weather-temperature {
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+#forecasting {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 1rem;
+}
+
+.forecast {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  background-color: white;
+}
+
+.fore-day {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 0 ;
+  border: 1px solid var(--border-color);
+  background-color:var(--primary-color);
+  color: white
+}
+
+.forecast-icon {
+  margin: 0 auto;
+  width: 30px;
+  height: 100%;
+  display: block;
+}
+
+.forecast-temperature {
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+
+}

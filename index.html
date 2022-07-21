@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/logo-small.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Temple Inn & Suites | Hotel</title>
+    <meta name="author" content="Nathan Kutomi" />
+    <meta
+      name="description"
+      content="The Temple Inn & Suites is a hotel chain specialized to accomodate those near temple locations around Bethesda, MD."
+    />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/weatherapi.js" defer></script>
+    <script src="./js/windchill.js" defer></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+  </head>
+  <body>
+    <header class="card">
+      <div class="header-grid">
+        <figure>
+          <img
+            src="./images/logo.webp"
+            alt="Paulistano's logo"
+            width="200"
+            height="200"
+          />
+        </figure>
+        <div class="header-title">
+          <h1>Temples Inn & Suites</h1>
+        </div>
+        <div class="social-links">
+          <a href="http://www.facebook.com" target="_blank"
+            ><img
+              src="./images/facebook_logo.webp"
+              alt="facebook page"
+              width="47"
+              height="47"
+          /></a>
+          <a href="http://www.instagram.com" target="_blank"
+            ><img
+              src="./images/instagram_logo.webp"
+              alt="instagram page"
+              width="47"
+              height="47"
+          /></a>
+        </div>
+        <div id="header-date">Monday, 22 November 202x</div>
+        <div id="header-alert">
+          <button id="header-msg-btn">X</button>
+          <p id="header-msg">Government Alerts</p>
+        </div>
+      </div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Home</h1>
+      <section class="main-hero">
+        <figure>
+          <img
+            src="./images/hero.webp"
+            alt="Washington Temple Reception"
+            srcset="
+              images/hero-400w.webp  400w,
+              images/hero-650w.webp  650w,
+              images/hero-900w.webp  900w,
+              images/hero.webp      1250w
+            "
+            width="900"
+            height="600"
+            sizes="(max-width: 400px) 400w, (max-width: 650px) 650w, (max-width: 900px) 900w, 1250w"
+          />
+        </figure>
+        <div id="hero-overlay">
+          <h2>Come make your reservation now!</h2>
+          <a id="hero-overlay-btn" href="join.html">Join today</a>
+        </div>
+      </section>
+      <section class="main-contact">
+        <h2>Contact Us</h2>
+        <h3>Inn Front Desk</h3>
+        <div id="main-contact-box">
+          <div>
+            <p><em>Working Hours:</em> 24/7</p>
+            <p>
+              <em>Address:</em><br />
+              4800 Montgomery Ln #300<br />
+              Bethesda, MD 20814<br />
+              United States
+            </p>
+            <p>
+              <em>Phone:</em><br />
+              (+1) 301-555-1234
+            </p>
+          </div>
+          <figure>
+            <img src="./images/contact.webp" alt="Washington Temple" />
+          </figure>
+        </div>
+      </section>
+      <section class="main-temple">
+        <h2>Nearby Temple</h2>
+        <h3>Washington D.C. Temple</h3>
+        <div id="main-temple-box">
+          <figure>
+            <img
+              src="./images/temples/washington/temple.jpeg"
+              alt="Washington Temple"
+            />
+          </figure>
+          <div>
+            <p>
+              <em>Working Hours:</em><br />
+              7am to 9pm
+            </p>
+            <p>
+              <em>Address:</em><br />
+              9900 Stoneybrook Dr<br />
+              Kensington MD 20895-3199<br />
+              United States
+            </p>
+            <p>
+              <em>Phone:</em><br />
+              (+1) 301-588-0650
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="main-weather">
+        <h2>Weather</h2>
+        <div id="temperature">
+          <img id="weather-icon" src="#" alt="#" width="75" height="75" />
+          <p id="weather-temperature">40 ºF</p>
+        </div>
+        <p>Condition: <span id="weather-condition">Partly Cloudy</span></p>
+        <p>Humidity: <span id="weather-humidity">50%</span></p>
+        <p>Wind Speed: <span id="weather-wind-speed">5</span> mph</p>
+        <p>Wind Chill: <span id="weather-wind-chill">N/A</span> ºF</p>
+        <div id="forecasting">
+          <div id="fore1">
+            <div class="fore-day">WED</div>
+            <div class="forecast">
+              <img
+                class="forecast-icon"
+                src="#"
+                alt="#"
+                width="30"
+                height="30"
+              />
+              <p class="forecast-temperature">40 ºF</p>
+            </div>
+          </div>
+          <div id="fore2">
+            <div class="fore-day">THU</div>
+            <div class="forecast">
+              <img
+                class="forecast-icon"
+                src="#"
+                alt="#"
+                width="30"
+                height="30"
+              />
+              <p class="forecast-temperature">40 ºF</p>
+            </div>
+          </div>
+          <div id="fore3">
+            <div class="fore-day">FRI</div>
+            <div class="forecast">
+              <img
+                class="forecast-icon"
+                src="#"
+                alt="#"
+                width="30"
+                height="30"
+              />
+              <p class="forecast-temperature">40 ºF</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="card">
+      <figure class="footer-figure">
+        <img
+          src="./images/logo.webp"
+          alt="Paulistano's logo"
+          width="100"
+          height="100"
+        />
+      </figure>
+      <div class="social-links">
+        <a href="http://www.facebook.com" target="_blank"
+          ><img
+            src="./images/facebook_logo.webp"
+            alt="facebook page"
+            width="47"
+            height="47"
+        /></a>
+        <a href="http://www.instagram.com" target="_blank"
+          ><img
+            src="./images/instagram_logo.webp"
+            alt="instagram page"
+            width="47"
+            height="47"
+        /></a>
+      </div>
+      <p class="footer-email">
+        <a href="mailto:contact@templesinn.com">contact@templesinn.com</a><br />
+      </p>
+      <p class="footer-phone">
+        <a href="tel:3015551234">(+1) 301-555-1234</a>
+      </p>
+      <p class="footer-map">
+        <a href="https://goo.gl/maps/dwviEGFFgSFBfC6q8" target="_blank">Map</a>
+      </p>
+      <p class="footer-openweather">
+        <a href="https://openweathermap.org/" target="_blank">Open Weather</a>
+      </p>
+      <p class="footer-info">
+        <span id="copyright"></span> Temples Inn & Suites
+      </p>
+      <p class="footer-last-updated">
+        <span id="last-updated">Last Updated:</span>
+      </p>
+    </footer>
+  </body>
+</html>

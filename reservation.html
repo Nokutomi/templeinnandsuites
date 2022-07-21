@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/logo-small.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Temple Inn & Suites | Hotel</title>
+    <meta name="author" content="Nathan Kutomi" />
+    <meta
+      name="description"
+      content="The Temple Inn & Suites is a hotel chain specialized to accomodate those near temple locations around Bethesda, MD."
+    />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/windchill.js" defer></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+  </head>
+  <body>
+    <header class="card">
+      <div class="header-grid">
+        <figure>
+          <img
+            src="./images/logo.webp"
+            alt="Paulistano's logo"
+            width="200"
+            height="200"
+          />
+        </figure>
+        <div class="header-title">
+          <h1>Temples Inn & Suites</h1>
+        </div>
+        <div class="social-links">
+          <a href="http://www.facebook.com" target="_blank"
+            ><img
+              src="./images/facebook_logo.webp"
+              alt="facebook page"
+              width="47"
+              height="47"
+          /></a>
+          <a href="http://www.instagram.com" target="_blank"
+            ><img
+              src="./images/instagram_logo.webp"
+              alt="instagram page"
+              width="47"
+              height="47"
+          /></a>
+        </div>
+        <div id="header-date">Monday, 22 November 202x</div>
+        <div id="header-alert" class="hideme">
+          <button id="header-msg-btn">X</button>
+          <p id="header-msg">Government Alerts</p>
+        </div>
+      </div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li class="active"><a href="reservation.html">Reservation</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Join</h1>
+      <section class="main-join-form">
+        <h2>Join our chamber</h2>
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Personal Info</legend>
+            <label class="top"
+              >First name:* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last name:* <input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Title: <input type="text" name="title" pattern="[a-zA-Z- ]{7,}"
+            /></label>
+            <label class="top"
+              >Email:*
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="something@gmail.com"
+            /></label>
+            <label class="top"
+              >Phone:* <input type="tel" name="phone" required
+            /></label>
+            <label class="top"
+              >Business name/title:*
+              <input type="text" name="business-title" required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Membership Level</legend>
+
+            <label class="sbs">
+              <input type="radio" name="membership-level" value="np" />
+              Non-Profit
+              <span class="benefits"
+                >(Membership is for non profit organizations and there is no
+                fee.)</span
+              >
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership-level" value="bronze" />
+              Bronze Membership.
+              <span class="benefits"
+                >($5.00/month. Access to other businesses in the chamber)</span
+              >
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership-level" value="silver" />
+              Silver Membership
+              <span class="benefits"
+                >($15.00/month. All from Bronze and event discounts)</span
+              >
+            </label>
+            <label class="sbs">
+              <input type="radio" name="membership-level" value="gold" /> Gold
+              Membership
+              <span class="benefits"
+                >($25.00/month. All from Silver plus trainings and advertising
+                in the Chamber home page)</span
+              >
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Business Info</legend>
+            <label class="top"
+              >Business Description:
+              <textarea
+                name="business-description"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </label>
+            <input hidden name="date" id="date" />
+          </fieldset>
+          <input type="submit" value="Join Chamber" class="submitBtn" />
+        </form>
+      </section>
+    </main>
+    <footer class="card">
+      <figure class="footer-figure">
+        <img
+          src="./images/logo.webp"
+          alt="Paulistano's logo"
+          width="100"
+          height="100"
+        />
+      </figure>
+      <div class="social-links">
+        <a href="http://www.facebook.com" target="_blank"
+          ><img
+            src="./images/facebook_logo.webp"
+            alt="facebook page"
+            width="47"
+            height="47"
+        /></a>
+        <a href="http://www.instagram.com" target="_blank"
+          ><img
+            src="./images/instagram_logo.webp"
+            alt="instagram page"
+            width="47"
+            height="47"
+        /></a>
+      </div>
+      <p class="footer-email">
+        <a href="mailto:contact@templesinn.com">contact@templesinn.com</a><br />
+      </p>
+      <p class="footer-phone">
+        <a href="tel:3015551234">(+1) 301-555-1234</a>
+      </p>
+      <p class="footer-map">
+        <a href="https://goo.gl/maps/dwviEGFFgSFBfC6q8" target="_blank">Map</a>
+      </p>
+      <p class="footer-openweather">
+        <a href="https://openweathermap.org/" target="_blank">Open Weather</a>
+      </p>
+      <p class="footer-info">
+        <span id="copyright"></span> Temples Inn & Suites
+      </p>
+      <p class="footer-last-updated">
+        <span id="last-updated">Last Updated:</span>
+      </p>
+    </footer>
+  </body>
+</html>

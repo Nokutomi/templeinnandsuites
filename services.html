@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/logo-small.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Temple Inn & Suites | Hotel</title>
+    <meta name="author" content="Nathan Kutomi" />
+    <meta
+      name="description"
+      content="The Temple Inn & Suites is a hotel chain specialized to accomodate those near temple locations around Bethesda, MD."
+    />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/windchill.js" defer></script>
+    <script src="./js/visits.js" defer></script>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+  </head>
+  <body>
+    <header class="card">
+      <div class="header-grid">
+        <figure>
+          <img
+            src="./images/logo.webp"
+            alt="Paulistano's logo"
+            width="200"
+            height="200"
+          />
+        </figure>
+        <div class="header-title">
+          <h1>Temples Inn & Suites</h1>
+        </div>
+        <div class="social-links">
+          <a href="http://www.facebook.com" target="_blank"
+            ><img
+              src="./images/facebook_logo.webp"
+              alt="facebook page"
+              width="47"
+              height="47"
+          /></a>
+          <a href="http://www.instagram.com" target="_blank"
+            ><img
+              src="./images/instagram_logo.webp"
+              alt="instagram page"
+              width="47"
+              height="47"
+          /></a>
+        </div>
+        <div id="header-date">Monday, 22 November 202x</div>
+        <div id="header-alert" class="hideme">
+          <button id="header-msg-btn">X</button>
+          <p id="header-msg">Government Alerts</p>
+        </div>
+      </div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="temples.html">Temples</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li class="active"><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Discover</h1>
+      <section class="main-demographics">
+        <h2>Demographics</h2>
+        <p>
+          São Paulo is the largest city of Brazil and the largest city proper in
+          the Americas and the southern hemisphere. It's also one of the top 10
+          largest metropolitan areas in the world. São Paulo is a global city
+          with a strong influence in the arts, entertainment, finance and
+          commerce, and the city hosts the largest gay pride parade in the
+          world. Known colloquially as Sampa or Cidade da Garoa (city of
+          drizzle), the municipality had a 2011 population of 11.31 million.
+        </p>
+        <p>
+          Greater São Paulo actually has many definitions, but the legal
+          definition of Região Metropolitana de São Paulo has 39 municipalities
+          with a 2016 estimated population of 21 million people. This definition
+          includes 38 smaller cities around São Paulo. Because the city has such
+          a huge urban sprawl, there is another definition for its metropolitan
+          area: Complexo Metropolitano Expandido, which is the same as a
+          Combined Statistical Area in the United States. By this definition,
+          greater São Paulo is the third largest city in the world with more
+          than 27 million residents.
+          <a
+            href="https://worldpopulationreview.com/world-cities/sao-paulo-population"
+            >font</a
+          >
+        </p>
+        <p>As of 2020, the population of São Paulo city is 12.33 million</p>
+
+        <p>
+          <span class="label">Days since last visit: </span
+          ><span class="visits"></span>
+        </p>
+      </section>
+      <section class="main-discover-images">
+        <figure>
+          <img
+            src="images/discover/bruno-thethe-T56KAD-Iyag-unsplash.webp"
+            alt="Ponte Estaiada"
+            class="responsive-image norm"
+            loading="lazy"
+            width="300"
+            height="450"
+          />
+          <figcaption>Ponte Estaiada</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/discover/ckturistando-t4aa3L7QLcI-unsplash.webp"
+            alt="Beco do Batman"
+            class="responsive-image norm"
+            loading="lazy"
+            width="300"
+            height="200"
+          />
+          <figcaption>Beco do Batman</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/discover/d-a-v-i-d-s-o-n-l-u-n-a-mhTUlFub1vU-unsplash.webp"
+            alt="Largo do Paissandú"
+            class="responsive-image norm"
+            loading="lazy"
+            width="300"
+            height="450"
+          />
+          <figcaption>Largo do Paissandú</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/discover/gabriel-ramos-L-vnYS1p6l4-unsplash.webp"
+            alt="Paulista"
+            class="responsive-image norm"
+            loading="lazy"
+            width="300"
+            height="485"
+          />
+          <figcaption>Paulista</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/discover/glauber-sampaio-3ugLSp6jNxo-unsplash.webp"
+            alt="Copan"
+            class="responsive-image norm"
+            loading="lazy"
+            width="300"
+            height="450"
+          />
+          <figcaption>Copan</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/discover/joao-tzanno-BxoaHOKCD_Q-unsplash.webp"
+            alt="Paulista high view"
+            class="responsive-image norm"
+            loading="lazy"
+            width="300"
+            height="225"
+          />
+          <figcaption>Paulista high view</figcaption>
+        </figure>
+      </section>
+    </main>
+    <footer class="card">
+      <figure class="footer-figure">
+        <img
+          src="./images/logo.webp"
+          alt="Paulistano's logo"
+          width="100"
+          height="100"
+        />
+      </figure>
+      <div class="social-links">
+        <a href="http://www.facebook.com" target="_blank"
+          ><img
+            src="./images/facebook_logo.webp"
+            alt="facebook page"
+            width="47"
+            height="47"
+        /></a>
+        <a href="http://www.instagram.com" target="_blank"
+          ><img
+            src="./images/instagram_logo.webp"
+            alt="instagram page"
+            width="47"
+            height="47"
+        /></a>
+      </div>
+      <p class="footer-email">
+        <a href="mailto:contact@templesinn.com">contact@templesinn.com</a><br />
+      </p>
+      <p class="footer-phone">
+        <a href="tel:3015551234">(+1) 301-555-1234</a>
+      </p>
+      <p class="footer-map">
+        <a href="https://goo.gl/maps/dwviEGFFgSFBfC6q8" target="_blank">Map</a>
+      </p>
+      <p class="footer-openweather">
+        <a href="https://openweathermap.org/" target="_blank">Open Weather</a>
+      </p>
+      <p class="footer-info">
+        <span id="copyright"></span> Temples Inn & Suites
+      </p>
+      <p class="footer-last-updated">
+        <span id="last-updated">Last Updated:</span>
+      </p>
+    </footer>
+  </body>
+</html>

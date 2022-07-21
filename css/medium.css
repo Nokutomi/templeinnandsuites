@@ -1,0 +1,250 @@
+@media only screen and (min-width: 35rem) {
+  figure img {
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .header-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  #header-date {
+    text-align: center;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    z-index: 2;
+  }
+
+  .header-grid figure {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .header-title {
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    z-index: 2;
+  }
+
+  .header-grid .social-links {
+    grid-column: 3 / -1;
+    grid-row: 1 / 3;
+    padding-right: 10rem;
+  }
+
+  nav {
+    padding: 0 1rem;
+  }
+
+  main section {
+    margin-bottom: 0;
+  }
+
+  main {
+    margin: 1rem 0.5rem;
+    padding: 0 10px 5px;
+    display: grid;
+    align-items: stretch;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-areas:
+      "title title"
+      "hero hero"
+      "news news"
+      "spot1 spot2"
+      "join join"
+      "event weather"; */
+  }
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  .main-weather p {
+    margin: 0.3rem;
+  }
+
+  .main-weather h2 {
+    margin-bottom: 0rem;
+  }
+
+  .main-weather {
+    grid-row: 3 / 4;
+    grid-column: 2 / -1;
+  }
+
+  .main-hero {
+    grid-column: 1 / -1;
+  }
+
+  .main-temple {
+    grid-column: 1 / -1;
+  }
+
+  #main-temple-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .main-temple figure img {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  #main-temple-box div {
+    min-width: fit-content;
+  }
+
+  #main-contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .main-contact figure img {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #main-contact-box div {
+    min-width: fit-content;
+  }
+
+  #hero-overlay {
+    border: 1px solid var(--border-color);
+  }
+
+  #hero-overlay {
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    width: 38%;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+  }
+
+  #hero-overlay-btn {
+    text-shadow: none;
+  }
+
+  .main-demographics {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-join-form {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-discover-images {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
+  .main-directory {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-contact-form {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+  }
+
+  .main-contact-info {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+  .norm:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 120px 1fr 1fr 1fr 1fr 120px;
+    align-items: center;
+    padding: 1rem 1rem 3rem 0;
+  }
+
+  .footer-figure {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    margin: 0.1rem;
+  }
+
+  footer .social-links {
+    grid-column: -2 / -1;
+    grid-row: 1 / 4;
+    text-align: left;
+  }
+
+  .footer-email {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+  }
+
+  .footer-phone {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+
+  .footer-map {
+    grid-column: 4 / 6;
+    grid-row: 1 / 2;
+    text-align: center;
+  }
+
+  .footer-openweather {
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+
+  .footer-info {
+    grid-column: 2 / -2;
+    text-align: center;
+  }
+
+  .footer-last-updated {
+    grid-column: 2 / -2;
+    text-align: center;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+
+  .main-join {
+    display: block;
+  }
+
+  .benefits {
+    display: inline;
+    color: #999;
+  }
+
+  .list section p {
+    display: block; /* smaller viewports only */
+  }
+
+  .main-contact-info h3 {
+    margin-left: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .main-contact-info p {
+    padding-right: 0.5rem;
+    margin: 0.5rem 2rem;
+  }
+}
