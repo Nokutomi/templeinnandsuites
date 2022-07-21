@@ -134,7 +134,10 @@ main h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
 
+.main-temple-card figure i{
+  width: 30px;
 }
 
 .main-temple-card details {

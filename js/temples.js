@@ -1,5 +1,25 @@
 let temples = document.querySelector(".temples");
 
+function toggleLike(icon) {
+  let like = !!+window.localStorage.getItem(icon.id);
+  let newValue = like ? 0 : 1
+  localStorage.setItem(icon.id, newValue);
+  icon.classList.toggle("fa-thumbs-down");
+}
+
+function getLikes() {
+  let likes = [];
+  for (let i = 1; i < 5; i++) {
+    if (!window.localStorage.getItem(i)) {
+      localStorage.setItem(i, 1);
+    }
+    likes.push(!!+window.localStorage.getItem(i));
+  }
+  return likes;
+}
+
+let likes = getLikes();
+
 function displayTemple(item) {
   // Create elements to add to the document
   const {
@@ -34,6 +54,10 @@ function displayTemple(item) {
     let paragraph = `<p>${part.text}</p>`;
     historyText = historyText + heading + paragraph;
   });
+
+  let classes = likes[`${id - 1}`]
+    ? "fa fa-thumbs-up fa-2x"
+    : "fa fa-thumbs-up fa-2x fa-thumbs-down";
 
   let card = document.createElement("section");
   card.classList.add("main-temple-card");
@@ -85,6 +109,7 @@ function displayTemple(item) {
           ${historyText}
         </details>
       </div>
+      <i id="${id}" onclick="toggleLike(this)" class="${classes}" width="130"></i>
     </div>
     `;
 
@@ -99,7 +124,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    // console.table(jsonObject); // temporary checking for valid response and data parsing
     const temples = jsonObject;
     temples.forEach(displayTemple);
   });
