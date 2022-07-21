@@ -57,10 +57,10 @@ header h2 {
   margin-left: 8px;
 }
 
-#header-alert{
+#header-alert {
   grid-column: 1 / -1;
   padding: 1rem;
-  color: red
+  color: red;
 }
 
 .showme {
@@ -117,10 +117,83 @@ main h3 {
   text-align: center;
 }
 
+.main-temple-card h2 {
+  text-align: center;
+  padding: 0;
+}
+
 .main-temple figure img {
   display: block;
   max-width: 350px;
   width: 100%;
+}
+
+.main-temple-card figure img {
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.main-temple-card details {
+  border: 1px solid var(--border-color);
+  padding: 1rem 0 0;
+  margin: 1rem 0 0;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.main-temple-card details p {
+  padding: 0.3rem 1rem;
+  margin: 0;
+}
+
+.main-temple-card summary {
+  text-align: left;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  color: white;
+}
+
+section.main-temple-card summary + p,
+section.main-temple-card summary + h3 {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.main-temple-card details p:last-child {
+  padding-bottom: 1rem;
+}
+
+.main-temple-card summary ~ * {
+  background-color: var(--secondary-color);
+}
+
+.temple-history p,
+.temple-history h3 {
+  text-align: left;
+}
+
+.temple-history ~ h3 {
+  padding: 0 1rem;
+  margin: 1rem 1rem; 
+}
+
+.temple-history > h3 {
+  padding: 0 1rem 0.5rem;
+  margin: 0
+}
+
+#main-temple-card-box {
+  display: flex column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#main-temple-card-box div {
+  min-width: fit-content;
 }
 
 .main-contact figure img {
@@ -430,26 +503,26 @@ form label.top input:required:valid {
 
 /* Form / Grid toggle */
 
-.main-directory {
+.main-temples {
   padding: 1rem;
   min-width: 250px;
 }
 
-.directory-buttons {
+.temples-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-.main-directory button {
+.main-temples button {
   padding: 1rem;
   margin: 0 0.2rem 1rem;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-items: stretch;
   gap: 1rem;
 }
@@ -490,11 +563,11 @@ form label.top input:required:valid {
   display: none; /* smaller viewports only */
 }
 
-.directory section h3 {
+.temples section h3 {
   font-size: 1.5rem;
 }
 
-.directory section a {
+.temples section a {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 0.9rem;
   word-wrap: break-word;
@@ -503,7 +576,7 @@ form label.top input:required:valid {
   white-space: nowrap;
 }
 
-.directory img {
+.temples img {
   height: 75px;
   max-width: 100%;
 }
@@ -552,10 +625,10 @@ form label.top input:required:valid {
 .fore-day {
   text-align: center;
   width: 100%;
-  padding: 0.5rem 0 ;
+  padding: 0.5rem 0;
   border: 1px solid var(--border-color);
-  background-color:var(--primary-color);
-  color: white
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .forecast-icon {
@@ -569,5 +642,4 @@ form label.top input:required:valid {
   font-size: 1rem;
   margin: 0 auto;
   padding: 0.5rem;
-
 }

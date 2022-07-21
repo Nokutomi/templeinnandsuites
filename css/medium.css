@@ -91,6 +91,7 @@
     justify-content: space-evenly;
   }
 
+
   .main-temple figure img {
     display: block;
     max-width: 600px;
@@ -149,7 +150,7 @@
     grid-row: 3 / 4;
   }
 
-  .main-directory {
+  .main-temples {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
   }
