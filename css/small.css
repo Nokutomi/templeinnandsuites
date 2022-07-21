@@ -190,7 +190,6 @@ section.main-temple-card summary + h3 {
 }
 
 #main-temple-card-box {
-  display: flex column;
   align-items: center;
   justify-content: space-evenly;
 }
