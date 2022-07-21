@@ -6,7 +6,6 @@ copyrightElem.textContent = `© ${currentYear}`;
 
 
 // Updating the Last Modified date
-// const lastUpdated = new Date(Date.UTC(2022, 3, 23, 19, 14, 253));
 const lastUpdated = new Date(document.lastModified);
 const dateOptions = {
   month: "numeric",
@@ -40,12 +39,3 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
 datefield.innerHTML = `<em>${fulldate}</em>`;
-
-
-// const dayOfWeek = currentDate.getDay()
-// const headerMsg = document.querySelector("#header-msg")
-// if (dayOfWeek === 1 || dayOfWeek === 2) {
-//   headerMsg.classList.add("showme")
-// } else {
-//   headerMsg.classList.add("hideme")
-// }

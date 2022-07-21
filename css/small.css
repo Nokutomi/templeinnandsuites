@@ -136,7 +136,7 @@ main h3 {
   object-fit: cover;
 }
 
-.main-temple-card figure i{
+.main-temple-card figure i {
   width: 30px;
 }
 
@@ -181,12 +181,12 @@ section.main-temple-card summary + h3 {
 
 .temple-history ~ h3 {
   padding: 0 1rem;
-  margin: 1rem 1rem; 
+  margin: 1rem 1rem;
 }
 
 .temple-history > h3 {
   padding: 0 1rem 0.5rem;
-  margin: 0
+  margin: 0;
 }
 
 #main-temple-card-box {
@@ -435,6 +435,10 @@ nav ul.open {
   padding-top: 5px;
 }
 
+.main-join-form h2 {
+text-align: center;
+}
+
 /*----------- FORM --------------*/
 
 form fieldset {
@@ -443,6 +447,8 @@ form fieldset {
   border-radius: 10px;
   padding: 0.5rem 2% 1.5rem;
   background-color: #ddd;
+  max-width: 500px;
+  margin: 2rem auto
 }
 
 form legend {
@@ -457,6 +463,7 @@ form div {
   padding-top: 1rem;
   color: black;
   font-size: 0.8rem;
+  text-align: center;
 }
 
 form label.top input,
@@ -472,12 +479,14 @@ form label.top textarea {
   width: 75%;
   max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 form label.sbs {
   display: block;
   padding: 0.75rem 0;
   color: #555;
+  text-align: center;
 }
 
 form input.submitBtn {
@@ -490,6 +499,8 @@ form input.submitBtn {
   margin-left: calc(2% + 2rem);
   width: 75%;
   max-width: 20rem;
+  display: block;
+  margin: 0 auto;
 }
 
 form label.top input:required {

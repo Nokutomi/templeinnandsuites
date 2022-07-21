@@ -18,7 +18,6 @@
       content="The Temple Inn & Suites is a hotel chain specialized to accomodate those near temple locations around Bethesda, MD."
     />
     <script src="./js/index.js" defer></script>
-    <script src="./js/windchill.js" defer></script>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
@@ -71,10 +70,55 @@
       </nav>
     </header>
     <main>
-      <h1>Join</h1>
+      <h1>Book</h1>
       <section class="main-join-form">
-        <h2>Join our chamber</h2>
+        <h2>Make a Reservation</h2>
         <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>Reservation dates</legend>
+            <label class="top"
+              >First-Day:*
+              <input type="date" name="fDate" min="2022-07-22" required
+            /></label>
+            <label class="top"
+              >Last-Day:*
+              <input type="date" name="lDate" required min="2022-07-23"
+            /></label>
+            <label class="top"
+              >Special Accomodations:
+              <textarea
+                name="business-description"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Type of Room</legend>
+            <label class="sbs">
+              <input type="radio" name="roomType" value="single" />
+              Single
+              <span class="benefits"
+                >(A room assigned to one person - one bed)</span
+              >
+            </label>
+            <label class="sbs">
+              <input type="radio" name="roomType" value="double" />
+              Double (one bed)
+              <span class="benefits">(A room assigned to two people)</span>
+            </label>
+            <label class="sbs">
+              <input type="radio" name="roomType" value="triple" />
+              Triple
+              <span class="benefits"
+                >(A room that can accommodate three persons)</span
+              >
+            </label>
+            <label class="sbs">
+              <input type="radio" name="roomType" value="Quad" /> Gold Quad
+              <span class="benefits">(A room assigned to four people)</span>
+            </label>
+          </fieldset>
           <fieldset>
             <legend>Personal Info</legend>
             <label class="top"
@@ -82,9 +126,6 @@
             /></label>
             <label class="top"
               >Last name:* <input type="text" name="lname" required
-            /></label>
-            <label class="top"
-              >Title: <input type="text" name="title" pattern="[a-zA-Z- ]{7,}"
             /></label>
             <label class="top"
               >Email:*
@@ -97,58 +138,9 @@
             <label class="top"
               >Phone:* <input type="tel" name="phone" required
             /></label>
-            <label class="top"
-              >Business name/title:*
-              <input type="text" name="business-title" required
-            /></label>
           </fieldset>
-          <fieldset>
-            <legend>Membership Level</legend>
 
-            <label class="sbs">
-              <input type="radio" name="membership-level" value="np" />
-              Non-Profit
-              <span class="benefits"
-                >(Membership is for non profit organizations and there is no
-                fee.)</span
-              >
-            </label>
-            <label class="sbs">
-              <input type="radio" name="membership-level" value="bronze" />
-              Bronze Membership.
-              <span class="benefits"
-                >($5.00/month. Access to other businesses in the chamber)</span
-              >
-            </label>
-            <label class="sbs">
-              <input type="radio" name="membership-level" value="silver" />
-              Silver Membership
-              <span class="benefits"
-                >($15.00/month. All from Bronze and event discounts)</span
-              >
-            </label>
-            <label class="sbs">
-              <input type="radio" name="membership-level" value="gold" /> Gold
-              Membership
-              <span class="benefits"
-                >($25.00/month. All from Silver plus trainings and advertising
-                in the Chamber home page)</span
-              >
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Business Info</legend>
-            <label class="top"
-              >Business Description:
-              <textarea
-                name="business-description"
-                rows="5"
-                cols="50"
-              ></textarea>
-            </label>
-            <input hidden name="date" id="date" />
-          </fieldset>
-          <input type="submit" value="Join Chamber" class="submitBtn" />
+          <input type="submit" value="Book" class="submitBtn" />
         </form>
       </section>
     </main>
